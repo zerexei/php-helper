@@ -28,12 +28,12 @@ class Arr
     /**
      * Check if target exists on array
      * 
-     * @param string|int $target
      * @param array $array
+     * @param string|int $target
      * @param bool $byKey
      * @return bool
      */
-    public static function some(string|int $target, array $array, bool $byKey = false): bool
+    public static function some(array $array, string|int $target, bool $byKey = false): bool
     {
 
         if (!$byKey) {
