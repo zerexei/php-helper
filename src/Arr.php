@@ -52,7 +52,7 @@ class Arr
      */
     public static function map(array $array, callable $callback): array
     {
-        return array_map($callback, $array);
+        return array_map(callback: $callback, array: $array);
     }
 
     /**
@@ -65,7 +65,7 @@ class Arr
      */
     public static function reduce(array $array, callable $callback, mixed $initial = 0): mixed
     {
-        return array_reduce($array, $callback, $initial);
+        return array_reduce(array: $array, callback: $callback, initial: $initial);
     }
     // find
     // findIndex
