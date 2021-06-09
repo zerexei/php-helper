@@ -67,8 +67,32 @@ class Arr
     {
         return array_reduce(array: $array, callback: $callback, initial: $initial);
     }
-    // find
-    // findIndex
+
+    /**
+     * Find a value on an array then return value
+     * 
+     * @param array $array
+     * @param int|string $key
+     * @return int|string|false
+     */
+    public static function find(array $array, int|string $key): int|string|false
+    {
+        $key = array_search(needle: $key, haystack: $array, strict: true);
+        return $key ? $array[$key] : false;
+    }
+
+    /**
+     * Find a value on an array then return key
+     * 
+     * @param array $array
+     * @param int|string $key
+     * @return int|string|false
+     */
+    public static function findIndex(array $array, int|string $key): int|string|false
+    {
+        return array_search(needle: $key, haystack: $array, strict: true);
+    }
+
     // every
 
 
