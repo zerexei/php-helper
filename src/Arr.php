@@ -24,4 +24,22 @@ class Arr
 
         return array_merge($associative, $indexed);
     }
+
+    /**
+     * Check if target exists on array
+     * 
+     * @param string|int $target
+     * @param array $array
+     * @param bool $byKey
+     * @return bool
+     */
+    public static function some(string|int $target, array $array, bool $byKey = false): bool
+    {
+
+        if (!$byKey) {
+            return in_array(needle: $target, haystack: $array, strict: true);
+        }
+
+        return array_key_exists(key: $target, array: $array);
+    }
 }
