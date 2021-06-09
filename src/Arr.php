@@ -54,7 +54,19 @@ class Arr
     {
         return array_map($callback, $array);
     }
-    // map
+
+    /**
+     * Iteratively reduce the array to a single value using a callback function
+     * 
+     * @param array $array
+     * @param callable $callback
+     * @param mixed $initial
+     * @return mixed
+     */
+    public static function reduce(array $array, callable $callback, mixed $initial = 0): mixed
+    {
+        return array_reduce($array, $callback, $initial);
+    }
     // find
     // findIndex
     // every
