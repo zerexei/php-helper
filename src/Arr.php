@@ -103,4 +103,17 @@ class Arr
     {
         return array_unique(array: $array);
     }
+
+    /**
+     * Check if all element passed the callback
+     */
+    public static function every(array $array, callable $callback): bool
+    {
+        foreach ($array as $item) {
+            if (!$callback($item)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
