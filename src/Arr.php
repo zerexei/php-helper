@@ -16,6 +16,12 @@ class Arr
      */
     public static function filter(array $array, callable $callback): array
     {
-        return array_filter($array, $callback, ARRAY_FILTER_USE_BOTH);
+        if (empty($array)) return [];
+
+        $filtered = array_filter($array, $callback, ARRAY_FILTER_USE_BOTH);
+        $indexed = array_filter($filtered, fn ($v, $k) => is_integer($k), ARRAY_FILTER_USE_BOTH);
+        $associative = array_filter($filtered, fn ($v, $k) => !is_integer($k), ARRAY_FILTER_USE_BOTH);
+
+        return array_merge($associative, $indexed);
     }
 }
