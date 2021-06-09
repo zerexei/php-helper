@@ -3,6 +3,11 @@
 namespace Harf;
 
 /**
+ * TODO:
+ * 1. Add test
+ * 2. Add more methods
+ * 3. Refactor
+ * 
  * Array helper methods
  */
 class Arr
