@@ -1,0 +1,25 @@
+{
+  "name": "zerexei/reet-harf",
+  "description": "collection of helper functions",
+  "type": "library",
+  "keywords": [
+    "php"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zerexei/php-helper",
+  "authors": [
+    {
+      "name": "Angelo Arcillas",
+      "email": "angeloarcillas64@gmail.com",
+      "homepage": "https://github.com/zerexei"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hafr\\": "src/"
+    }
+  }
+}
