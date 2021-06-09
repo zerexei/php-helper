@@ -16,5 +16,7 @@ $res = [];
 
 $res[] = Arr::find([1,2,3], 3);
 
+$res = Arr::unique([1,2,2,3,3,3,4,4,5]);
+
 
 die(var_dump(...$res));

@@ -93,7 +93,14 @@ class Arr
         return array_search(needle: $key, haystack: $array, strict: true);
     }
 
-    // every
-
-
+    /**
+     * Remove duplicates from array
+     * 
+     * @param array $array
+     * @return array
+     */
+    public static function unique(array $array): array
+    {
+        return array_unique(array: $array);
+    }
 }
