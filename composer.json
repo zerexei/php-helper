@@ -19,7 +19,10 @@
   },
   "autoload": {
     "psr-4": {
-      "Hafr\\": "src/"
+      "Harf\\": "src/"
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
   }
 }

@@ -19,3 +19,19 @@
     <img src="https://img.shields.io/badge/Pull_Request-YES-blue.svg" alt="PRs welcome!" />
   </a>
 </p>
+
+## Setup
+
+```php
+// import module
+use \Harf\Arr;
+
+Arr::filter(); // filter an array
+Arr::some(); // test if 1 or more exists
+Arr::map(); // map through array items
+Arr::reduce(); // array to single value
+Arr::find(); // find a value on array
+Arr::findIndex(); // find index of value on array
+Arr::unique(); // return unique array
+Arr::every(); // test if every item exists
+```
