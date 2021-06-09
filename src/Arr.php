@@ -42,4 +42,22 @@ class Arr
 
         return array_key_exists(key: $target, array: $array);
     }
+
+    /**
+     * Map through array items
+     * 
+     * @param array $array
+     * @param callable $callback
+     * @return array
+     */
+    public static function map(array $array, callable $callback): array
+    {
+        return array_map($callback, $array);
+    }
+    // map
+    // find
+    // findIndex
+    // every
+
+
 }
